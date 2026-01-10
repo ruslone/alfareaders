@@ -30,6 +30,8 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
+  max-height: 200px;
+  object-fit: contain;
 }
 
 h1 {
