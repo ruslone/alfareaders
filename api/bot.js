@@ -18,7 +18,7 @@ export default async function handler(req, res) {
           keyboard: [[{
             text: "Открыть приложение",
             web_app: {
-              url: ""
+              url: "https://alfareaders.vercel.app/"
             }
           }]],
         resize_keyboard: true
