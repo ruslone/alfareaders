@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
-  <title>Отдых в Евпатории</title>
+  <title>Книжный клуб Альфа-Банка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,57 +12,70 @@
 <body>
   <div class="container">
 
-    <script>
-      const tg = window.Telegram.WebApp;
-      tg.ready();
+    <div class="section" id="user-block">
+      <h1 id="user">Привет!</h1>
+    </div>
 
-      const user = tg.initDataUnsafe ? .user;
-      document.getElementById("user").innerText =
-        user ? `<h1>Привет, ${user.first_name}` : "Привет!</h1>";
-    </script>
+    <div class="section">
+      <h1>Книжный клуб Альфа-Банка</h1>
+      <p class="main-text">
+        ❤️ <b>Alfa Readers</b> – это комьюнити Альфа-Банка, участники которого делятся друг с другом своим опытом и мыслями
+        по прочитанным книгам.
+      </p>
+      <p class="main-text">
+        <b>Наша цель</b> — создание условий, в которых у сотрудников Альфа-Банка сформируется ценность чтения в их жизни.
+      </p>
+    </div>
 
-    <h1>Книжный клуб Альфа-Банка</h1>
+    <div class="section">
+      <h1>Где и когда проходят встречи?</h1>
+      <p class="main-text">
+        Встречи проходят как очно, так и online в
+        <a target="_blank" href="https://alfabank.ktalk.ru/alfaReaders">ktalk</a>.
+      </p>
+      <p class="main-text">
+        Информация заранее публикуется в
+        <a target="_blank" href="https://t.me/+493QJBdX_wtjMzc6">Телеграм-канале</a>.
+      </p>
+    </div>
 
-    <p class="main-text">
-      ❤️ Alfa Readers – это комьюнити Альфа-Банка, участники которого делятся друг с другом своим опытом и мыслями по
-      прочитанным книгам.
-      **Наша цель** - создание условий, в которых у сотрудников Альфа-Банка сформируется ценность чтения в их жизни,
-      вместе мы сможем быстро развиваться и познавать новое!
-    </p>
+    <div class="section">
+      <h1>Как к нам присоединиться?</h1>
+      <p class="main-text">
+        У нас есть
+        <a href="https://t.me/+493QJBdX_wtjMzc6">Телеграм-канал</a>.
+      </p>
+    </div>
 
+    <div class="section">
+      <h1>Корпоративные библиотеки</h1>
+      <p class="main-text">
+        Доступны корпоративные библиотеки
+        <a target="_blank" href="https://login.alpinadigital.ru">Alpina</a> и
+        <a target="_blank" href="https://mybook.ru">MyBook</a>.
+      </p>
+      <p class="main-text">
+        Реализована бесшовная авторизация через Alfa People.
+        Для регистрации перейдите в раздел «Все о работе» → «Корпоративные библиотеки».
+      </p>
+    </div>
 
-    <h1>Где и когда проходят встречи?</h1>
-    <p class="main-text">
+    <div class="section">
+      <a class="link-btn" href="/">Ссылка в никуда</a>
+      <p><b>Читайте книги с AlfaReaders.</b></p>
+      <p><b>Книжный клуб для умных и свободных.</b></p>
+    </div>
 
-      Встречи проходят как очно, так и online в <a target="_blank"
-        href="https://alfabank.ktalk.ru/alfaReaders">ktalk</a>.
-
-      Информация заранее публикуется в <a target="_blank" href="https://t.me/+493QJBdX_wtjMzc6">Телеграмм канале</a>.
-    </p>
-
-
-    <h1>Как к нам присоединиться? </h1>
-    <p class="main-text">
-      У нас есть:
-
-      <a href="https://t.me/+493QJBdX_wtjMzc6">Телеграмм канал</a>
-    </p>
-
-    <h1>Корпоративные библиотеки</h1>
-
-    У нас есть Корпоративные библиотеки <a target="_blank" href="https://login.alpinadigital.ru">alpina</a> и <a
-      target="_blank" href="https://mybook.ru">mybook</a>. Сейчас реализована бесшовная авторизация через Alfa people.
-
-    Для регистрации перейдите на Alfa people в раздел "Все о работе", подраздел "Корпоративные библиотеки".
-
-
-    <a class="link-btn" href="/">ссылка, в никуда</a>
-
-
-    <b>Читайте книги с AlfaReaders.</b>
-
-    <b>Книжный клуб для умных и свободных.</b>
   </div>
-</body>
 
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+
+    const user = tg.initDataUnsafe?.user;
+    if (user) {
+      document.getElementById("user").innerText = `Привет, ${user.first_name}!`;
+    }
+  </script>
+</body>
 </html>
