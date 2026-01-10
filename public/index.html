@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Отдых в Евпатории</title>
@@ -7,57 +8,61 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-
   <div class="container">
 
-  <script>
-    const tg = window.Telegram.WebApp;
-    tg.ready();
+    <script>
+      const tg = window.Telegram.WebApp;
+      tg.ready();
 
-    const user = tg.initDataUnsafe?.user;
-    document.getElementById("user").innerText =
-      user ? `<h1>Привет, ${user.first_name}` : "Привет!</h1>";
-  </script>
+      const user = tg.initDataUnsafe ? .user;
+      document.getElementById("user").innerText =
+        user ? `<h1>Привет, ${user.first_name}` : "Привет!</h1>";
+    </script>
 
     <h1>Книжный клуб Альфа-Банка</h1>
 
-    
     <p class="main-text">
-      ❤️ Alfa Readers – это комьюнити Альфа-Банка, участники которого делятся друг с другом своим опытом и мыслями по прочитанным книгам. 
-      **Наша цель** - создание условий, в которых у сотрудников Альфа-Банка сформируется ценность чтения в их жизни, вместе мы сможем быстро развиваться и познавать новое!
+      ❤️ Alfa Readers – это комьюнити Альфа-Банка, участники которого делятся друг с другом своим опытом и мыслями по
+      прочитанным книгам.
+      **Наша цель** - создание условий, в которых у сотрудников Альфа-Банка сформируется ценность чтения в их жизни,
+      вместе мы сможем быстро развиваться и познавать новое!
     </p>
+
+
+    <h1>Где и когда проходят встречи?</h1>
+    <p class="main-text">
+
+      Встречи проходят как очно, так и online в <a target="_blank"
+        href="https://alfabank.ktalk.ru/alfaReaders">ktalk</a>.
+
+      Информация заранее публикуется в <a target="_blank" href="https://t.me/+493QJBdX_wtjMzc6">Телеграмм канале</a>.
+    </p>
+
+
+    <h1>Как к нам присоединиться? </h1>
+    <p class="main-text">
+      У нас есть:
+
+      <a href="https://t.me/+493QJBdX_wtjMzc6">Телеграмм канал</a>
+    </p>
+
+    <h1>Корпоративные библиотеки</h1>
+
+    У нас есть Корпоративные библиотеки <a target="_blank" href="https://login.alpinadigital.ru">alpina</a> и <a
+      target="_blank" href="https://mybook.ru">mybook</a>. Сейчас реализована бесшовная авторизация через Alfa people.
+
+    Для регистрации перейдите на Alfa people в раздел "Все о работе", подраздел "Корпоративные библиотеки".
+
+
+    <a class="link-btn" href="/">ссылка, в никуда</a>
+
+
+    <b>Читайте книги с AlfaReaders.</b>
+
+    <b>Книжный клуб для умных и свободных.</b>
   </div>
-
-  <h1>Где и когда проходят встречи?</h1>
-  <p class="main-text">
-
-  Встречи проходят как очно, так и online в <a target="_blank" href="https://alfabank.ktalk.ru/alfaReaders">ktalk</a>.
-  
-  Информация заранее публикуется в <a target="_blank" href="https://t.me/+493QJBdX_wtjMzc6">Телеграмм канале</a>.
-  </p>    
-
-
-  <h1>Как к нам присоединиться? </h1> 
-  <p class="main-text">
-У нас есть:
-
-<a href="https://t.me/+493QJBdX_wtjMzc6">Телеграмм канал</a>
-</p>    
-
-<h1>Корпоративные библиотеки</h1>
-
-У нас есть Корпоративные библиотеки <a target="_blank" href="https://login.alpinadigital.ru">alpina</a> и <a target="_blank" href="https://mybook.ru">mybook</a>. Сейчас реализована бесшовная авторизация через Alfa people.
-
-Для регистрации перейдите на Alfa people в раздел "Все о работе", подраздел "Корпоративные библиотеки".
-
-
-<a class="link-btn" href="/">ссылка, в никуда</a>
-
-
-<b>Читайте книги с AlfaReaders.</b>
-
-<b>Книжный клуб для умных и свободных.</b>
 </body>
+
 </html>
